@@ -1,10 +1,11 @@
 
 
+
 **Theme:** Minecraft with Redstone Machines  
 **Features:**
 - Redstone doors and traps
-- TNT final escape event
-- Multi-stage gameplay
+- TNT BOSS event
+- One stage gameplay
 
 
 - `flowchart/` : Map design diagrams
