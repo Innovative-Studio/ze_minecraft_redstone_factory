@@ -1,5 +1,4 @@
 
 ## 🔀 Pull Request 提交流程
-- Fork 專案並建立功能分支
-- 提交時使用清晰的提交訊息
-- 建立 PR，請使用提供的模板
+- Push dev branch
+- Using the PR template in PR description
