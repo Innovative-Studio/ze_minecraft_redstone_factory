@@ -1,0 +1,14 @@
+# Ignore compiled map files
+*.vmap_c
+
+# Ignore compiled model files
+*.vmdl_c
+
+# Ignore compiled textures
+*.vtex_c
+
+# Ignore packed files
+*.vpk
+
+# Ignore logs
+*.log
