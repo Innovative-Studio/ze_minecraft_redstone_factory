@@ -1,0 +1,46 @@
+// maps/ze_minecraft_redstone_factory.vmap
+
+// vrad3.exe -map maps/ze_minecraft_redstone_factory.vmap -script script-gpu.vrad3 -trackmemorycounts -aftermath -aftermath_full -vulkan -gpuraytracing -allthreads -unbufferedio -noassert
+
+//
+// GPU Init
+//
+gpu_init
+lightmap_type ahd
+sceneinfo_gpu scene_info.kv3
+
+//
+// Lightmap
+//
+lightmap_image_gpu 1024 1024 1024
+lightmap_load_packing_geometry_gpu lightmap_packing_geometry.dat
+
+run compute_all_lightmap_blocks
+//lightmap_image_save lightmap_image_post_compute // Can comment out the line above and restore with lightmap_image_load
+
+lightmap_image_consolidate_small_charts 1
+lightmap_image_dilate_over_invalid
+lightmap_image_dilate_baked_shadows
+lightmap_image_remove_fireflies 4.0 fireflies.exr
+lightmap_image_filter_oidn 1
+lightmap_image_filter_sh_oidn 1
+lightmap_image_encode_ahd
+lightmap_image_fill_gutters 1
+uber_weld lightmap_seams.dat
+lightmap_image_write_ahd irradiance.exr directional_irradiance.exr
+lightmap_image_write_direct_light_shadows direct_light_shadows.exr -indexlights 4 
+lightmap_image_write_chart_color   lightmap_chart_color.exr 128 512
+lightmap_image_write_confidence    confidence.exr 
+lightmap_image_write_chart_ids chart_ids.dat
+
+compute_all_lightmap_blocks:
+    timer_start
+    lightmap_load_block_gpu lightmap_info.dat 0
+    lightmap_compute_block_gpu 128 512 0.050
+    timer_stop
+    timer_poll
+    print Lightmapping took $timer seconds
+    done
+
+// HACK! Avoid cleanup
+exit 0

@@ -1,0 +1,165 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	mesh_file = "scene_meshes.kv3"
+	instances = 
+	[
+		{
+			mesh = 0
+			material = resource_name:"materials/dev/reflectivity_30.vmat"
+			flags = 271
+		},
+		{
+			mesh = 1
+			material = resource_name:"materials/dev/dev_measuregeneric01.vmat"
+			flags = 271
+		},
+	]
+	ibl = 
+	{
+		uniform_color = [ 1.0, 1.0, 1.0 ]
+		bounce = [ 0.0, 0.0, 0.0, 1.0 ]
+		bounce_scale = 1.0
+		sun_light_min_brightness = 32.0
+	}
+	lights = 
+	[
+		{
+			barn = 
+			{
+				m_mToClipSpace = 
+				[
+					0.0, -0.000004, 0.0, 0.0,
+					0.0, 0.0, 0.000004, 0.0,
+					0.000002, 0.0, 0.0, 0.5,
+					0.0, 0.0, 0.0, 1.0,
+				]
+				m_mFromClipSpace = 
+				[
+					0.0, 0.0, 524288.0, -262144.0,
+					-262144.0, 0.0, 0.0, 0.0,
+					0.0, 262144.0, 0.0, 0.0,
+					0.0, 0.0, 0.0, 1.0,
+				]
+				m_vNearPlane = [ 1.0, 0.0, 0.0, -262144.0 ]
+				m_vLightPosition = [ -0.5, -0.5, 0.707107, 0.0 ]
+				m_vInnerRadius = [ 1.0, 1.0 ]
+				m_flShape = 0.0
+				m_vSkirt = [ 0.0, 0.0 ]
+				m_vColor = [ 1.0, 1.0, 1.0 ]
+				m_nCookie = -1
+				m_vDistanceFade = [ 1.0, 0.0 ]
+				m_qOrientation = [ -0.146447, 0.353553, 0.353553, 0.853553 ]
+				m_vAngleFade = [ 1.0, 0.0, 0.0 ]
+				m_nLuminaireType = "DISK"
+				m_flLightColorToRadiance = 13130.558594
+				m_bLightInsideFrustum = false
+				m_bSphericalCookie = false
+				m_Luminaire = 
+				{
+					m_vCenter = [ -0.5, -0.5, 0.707107 ]
+					m_ScaledTangents = 
+					[
+						[ -0.006171, 0.006171, 0.0 ],
+						[ 0.004363, 0.004363, 0.006171 ],
+					]
+					m_vNormal = [ 0.5, 0.5, -0.707107 ]
+				}
+			}
+			path_trace_light_flags = 15
+			baked_shadow_index = 0
+			baked_shadow_light_id = 0
+		},
+		{
+			barn = 
+			{
+				m_mToClipSpace = 
+				[
+					0.0, -0.000004, 0.0, 0.0,
+					0.0, 0.0, 0.000004, 0.0,
+					0.000002, 0.0, 0.0, 0.5,
+					0.0, 0.0, 0.0, 1.0,
+				]
+				m_mFromClipSpace = 
+				[
+					0.0, 0.0, 524288.0, -262144.0,
+					-262144.0, 0.0, 0.0, 0.0,
+					0.0, 262144.0, 0.0, 0.0,
+					0.0, 0.0, 0.0, 1.0,
+				]
+				m_vNearPlane = [ 1.0, 0.0, 0.0, -262144.0 ]
+				m_vLightPosition = [ -0.5, -0.5, 0.707107, 0.0 ]
+				m_vInnerRadius = [ 1.0, 1.0 ]
+				m_flShape = 0.0
+				m_vSkirt = [ 0.0, 0.0 ]
+				m_vColor = [ 1.0, 1.0, 1.0 ]
+				m_nCookie = -1
+				m_vDistanceFade = [ 1.0, 0.0 ]
+				m_qOrientation = [ -0.146447, 0.353553, 0.353553, 0.853553 ]
+				m_vAngleFade = [ 1.0, 0.0, 0.0 ]
+				m_nLuminaireType = "DISK"
+				m_flLightColorToRadiance = 13130.558594
+				m_bLightInsideFrustum = false
+				m_bSphericalCookie = false
+				m_Luminaire = 
+				{
+					m_vCenter = [ -0.5, -0.5, 0.707107 ]
+					m_ScaledTangents = 
+					[
+						[ -0.006171, 0.006171, 0.0 ],
+						[ 0.004363, 0.004363, 0.006171 ],
+					]
+					m_vNormal = [ 0.5, 0.5, -0.707107 ]
+				}
+			}
+			path_trace_light_flags = 15
+			baked_shadow_index = 1
+			baked_shadow_light_id = 0
+		},
+		{
+			barn = 
+			{
+				m_mToClipSpace = 
+				[
+					0.0, -0.000004, 0.0, 0.0,
+					0.0, 0.0, 0.000004, 0.0,
+					0.000002, 0.0, 0.0, 0.5,
+					0.0, 0.0, 0.0, 1.0,
+				]
+				m_mFromClipSpace = 
+				[
+					0.0, 0.0, 524288.0, -262144.0,
+					-262144.0, 0.0, 0.0, 0.0,
+					0.0, 262144.0, 0.0, 0.0,
+					0.0, 0.0, 0.0, 1.0,
+				]
+				m_vNearPlane = [ 1.0, 0.0, 0.0, -262144.0 ]
+				m_vLightPosition = [ -0.5, -0.5, 0.707107, 0.0 ]
+				m_vInnerRadius = [ 1.0, 1.0 ]
+				m_flShape = 0.0
+				m_vSkirt = [ 0.0, 0.0 ]
+				m_vColor = [ 1.0, 1.0, 1.0 ]
+				m_nCookie = -1
+				m_vDistanceFade = [ 1.0, 0.0 ]
+				m_qOrientation = [ -0.146447, 0.353553, 0.353553, 0.853553 ]
+				m_vAngleFade = [ 1.0, 0.0, 0.0 ]
+				m_nLuminaireType = "DISK"
+				m_flLightColorToRadiance = 13130.558594
+				m_bLightInsideFrustum = false
+				m_bSphericalCookie = false
+				m_Luminaire = 
+				{
+					m_vCenter = [ -0.5, -0.5, 0.707107 ]
+					m_ScaledTangents = 
+					[
+						[ -0.006171, 0.006171, 0.0 ],
+						[ 0.004363, 0.004363, 0.006171 ],
+					]
+					m_vNormal = [ 0.5, 0.5, -0.707107 ]
+				}
+			}
+			path_trace_light_flags = 15
+			baked_shadow_index = 2
+			baked_shadow_light_id = 0
+		},
+	]
+}
